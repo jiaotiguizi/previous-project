@@ -1,20 +1,20 @@
-public class MasterMind extends SuperHero{
+public class StrengthBuilder extends SuperHero{
 
-    public MasterMind(String[] fields) {
+    public StrengthBuilder(String[] fields) {
         super(fields);
     }
 
     public static boolean meetsConditions(String[] fields){
-        return Integer.parseInt(fields[1]) > 90;
+        return Integer.parseInt(fields[2]) > 90;
     }
 
     public void attack(SuperHero oHero){
         int damage = super.attack(oHero);
 
-        damage += this.getIntelligence() * 1.5 - oHero.getIntelligence();
+        damage += this.getStrength() * 3 - oHero.getStrength();
 
         return damage;
     }
 
-}
 
+}

@@ -123,7 +123,7 @@ public class SuperHero {
         return occupation;
     }
 
-    public int attack(SuperHero oHero){
+    public void attack(SuperHero oHero){
         return this.combat;
     }
 
@@ -151,6 +151,34 @@ public class SuperHero {
 
             if(MasterMind.meetsConditions(fields))
                 hero = new MasterMind(fields);
+            else
+                hero = new SuperHero(fields);
+
+            heroes.add(hero);
+
+            if(StrengthBuilder.meetsConditions(fields))
+                hero = new StrengthBuilder(fields);
+            else
+                hero = new SuperHero(fields);
+
+            heroes.add(hero);
+
+            if(FullofPower.meetsConditions(fields))
+                hero = new FullofPower(fields);
+            else
+                hero = new SuperHero(fields);
+
+            heroes.add(hero);
+
+            if(DurableMan.meetsConditions(fields))
+                hero = new DurableMan(fields);
+            else
+                hero = new SuperHero(fields);
+
+            heroes.add(hero);
+
+            if(VeryFast.meetsConditions(fields))
+                hero = new VeryFast(fields);
             else
                 hero = new SuperHero(fields);
 

@@ -36,26 +36,26 @@ Of course, we all have a favorite. Look through the dataset and figure out which
 
 **Deliverable 1:** Your first deliverable is to identify four categories of heroes that are found here based on a single attribute in a certain range (e.g., `MasterMind` with high intelligence). Document below your four named categories and the criteria that you would use to define them. You cannot use MasterMind, that one is already defined for you - but follow the example in describing your own categories. There are really no wrong answers, as long as they are based on one of the attributes in the dataset and fight in a slightly different way than the basic `SuperHero` class. They don't have to be the quantitative attributes, you can use Hair Color or text found in the Occupation - it's up to you, but these might be harder to translate to fight methods.
 
-My categories (and their descriptions) are: *EDIT THIS*
+My categories (and their descriptions) are: MasterMind, Strength Builder, Full of Power, Very Fast, and Durable Man.
 1. *MasterMind is a `SuperHero` with an intelligence over 90 who uses their intelligence to fight. In addition to whatever combat damage is assigned on attack, they also deal 1.5x of the difference between their intelligence and their opponent as damage to the other `SuperHero`.*
-2.
-3.
-4.
-5.
+2. Strength Builder is a 'SuperHero' that strength over 90, which will give them ability to give their rivals strong hit! (3 times damage of their difference strength)
+3. Full of Power is kind of 'SuperHero' that power over 90, their power is so big that they will destory everything front their eyes, so the damage they generated will double.
+4. Very Fast, just like the name, their speed is too fast (over 90) that they have the possibility to miss their rivals's shot.
+5. Durable Man is a 'SuperHero' with over 90 durability, they can stand a lot of damage, therefore, they will automatically reduce rivals' damage depend on their difference between durability times 2.
 
 Second, you must identify two subcategories of heroes that are found here based on a two or more attributes in a certain range. These subcategories should extend from the descriptions of at least one of your categories defined above (they can both be from the same super category, or from two different categories). Document below your two named subcategories and the criteria that you would use to define them. There are really no wrong answers, as long as they are based on two or mroe of the attributes in the dataset and fight in a slightly different way than their superclass.
 
-My subcategories (and their descriptions) are: *EDIT THIS*
-1. *`MySubcategory` is a `Category` that is different because and fights differently from a `Category` by...*
-2.
+My subcategories (and their descriptions) are: Overweight and Don't look down me
+1. 'Over Weight` is a `VeryFast` that is different because and fights differently from a `VeryFast` by their weight will influence their damage, since a very big guy will ultimately affected by their over size body, therefore their agility will slightly reduce, that is, their damage will reduced .1x damage. 
+2. 'Don't look down me' is a 'StrengthBuilder' that is different because and fights differently from a `StrengthBuilder' by their power inside. We know there are biological differences between male and female, however, this differences will stimulate female hero and make them stronger. (1.5x damage)
 
 
 Third, you must identify a champion. This is one of your "fan favorites" and you do not really have to justify it to us - it can be a good, bad, or neutral superhero. Tell us the "Name" of your champion from the name category in the dataset. Then, tell us what their unique power is. 
 
 
-My champion is: *EDIT THIS*
+My champion is: Green Lantern
 
-Their unique power is: *EDIT THIS* 
+Their unique power is: 'Heroes never die' I am the author and I will let Green Lantern are undefeatable! Don't even think about criticize it!
 
 ## Step 2 - Develop SubClasses for your Categories
 In your src folder, we have provided you with a superclass called `SuperHero` and an example subclass called `MasterMind`. You may alter SuperHero, but you may not alter MasterMind. A third class, `BattleRoyale` contains the main method. 
