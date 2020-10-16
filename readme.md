@@ -46,7 +46,7 @@ My categories (and their descriptions) are: MasterMind, Strength Builder, Full o
 Second, you must identify two subcategories of heroes that are found here based on a two or more attributes in a certain range. These subcategories should extend from the descriptions of at least one of your categories defined above (they can both be from the same super category, or from two different categories). Document below your two named subcategories and the criteria that you would use to define them. There are really no wrong answers, as long as they are based on two or mroe of the attributes in the dataset and fight in a slightly different way than their superclass.
 
 My subcategories (and their descriptions) are: Overweight and Don't look down me
-1. 'Over Weight` is a `VeryFast` that is different because and fights differently from a `VeryFast` by their weight will influence their damage, since a very big guy will ultimately affected by their over size body, therefore their agility will slightly reduce, that is, their damage will reduced .1x damage. 
+1. 'Over Weight` is a `VeryFast` that is different because and fights differently from a `VeryFast` by their weight (over 150 kg) will influence their damage, since a very big guy will ultimately affected by their over size body, therefore their agility will slightly reduce, that is, their damage will reduced .1x damage. 
 2. 'Don't look down me' is a 'StrengthBuilder' that is different because and fights differently from a `StrengthBuilder' by their power inside. We know there are biological differences between male and female, however, this differences will stimulate female hero and make them stronger. (1.5x damage)
 
 

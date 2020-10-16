@@ -11,7 +11,8 @@ public class FullofPower extends SuperHero{
     public void attack(SuperHero oHero) {
         int damage = super.attack(oHero);
 
-        damage += damage * 2;
+        damage += this.getPower() * 2 - oHero.getPower();
+
 
         return damage;
     }

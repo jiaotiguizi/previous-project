@@ -11,7 +11,7 @@ public class DurableMan extends SuperHero{
     public void attack(SuperHero oHero){
         int damage = super.attack(oHero);
 
-        damage -= this.getDurability() * 2 - oHero.getDurability();
+        damage += this.getDurability() - oHero.getDurability() / 2;
 
         return damage;
     }

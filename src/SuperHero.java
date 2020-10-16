@@ -151,38 +151,19 @@ public class SuperHero {
 
             if(MasterMind.meetsConditions(fields))
                 hero = new MasterMind(fields);
-            else
-                hero = new SuperHero(fields);
-
-            heroes.add(hero);
-
-            if(StrengthBuilder.meetsConditions(fields))
+            else if(StrengthBuilder.meetsConditions(fields))
                 hero = new StrengthBuilder(fields);
-            else
-                hero = new SuperHero(fields);
-
-            heroes.add(hero);
-
-            if(FullofPower.meetsConditions(fields))
+            else if(FullofPower.meetsConditions(fields))
                 hero = new FullofPower(fields);
-            else
-                hero = new SuperHero(fields);
-
-            heroes.add(hero);
-
-            if(DurableMan.meetsConditions(fields))
+            else if(DurableMan.meetsConditions(fields))
                 hero = new DurableMan(fields);
-            else
-                hero = new SuperHero(fields);
-
-            heroes.add(hero);
-
-            if(VeryFast.meetsConditions(fields))
+            else if(VeryFast.meetsConditions(fields))
                 hero = new VeryFast(fields);
             else
                 hero = new SuperHero(fields);
 
             heroes.add(hero);
+
         }
 
         return heroes;

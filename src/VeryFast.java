@@ -13,14 +13,13 @@ public class VeryFast extends SuperHero{
         int damage = super.attack(oHero);
 
         Random run = new Random();
-
         int i = 0;
-
         if (i == run.nextInt(5)){
             damage = 0;
         }
         else {
-            return damage;
+            return damage += this.getSpeed() - oHero.getSpeed();
+
         }
 
 
@@ -31,5 +30,4 @@ public class VeryFast extends SuperHero{
     }
 
 }
-
 

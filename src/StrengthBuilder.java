@@ -13,6 +13,7 @@ public class StrengthBuilder extends SuperHero{
 
         damage += this.getStrength() * 3 - oHero.getStrength();
 
+
         return damage;
     }
 
