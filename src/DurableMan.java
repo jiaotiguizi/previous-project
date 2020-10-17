@@ -8,7 +8,7 @@ public class DurableMan extends SuperHero{
         return Integer.parseInt(fields[4]) > 90;
     }
 
-    public void attack(SuperHero oHero){
+    public int attack(SuperHero oHero){
         int damage = super.attack(oHero);
 
         damage += this.getDurability() - oHero.getDurability() / 2;

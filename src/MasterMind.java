@@ -8,7 +8,7 @@ public class MasterMind extends SuperHero{
         return Integer.parseInt(fields[1]) > 90;
     }
 
-    public void attack(SuperHero oHero){
+    public int attack(SuperHero oHero){
         int damage = super.attack(oHero);
 
         damage += this.getIntelligence() * 1.5 - oHero.getIntelligence();

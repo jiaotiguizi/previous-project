@@ -1,8 +1,6 @@
-import java.util.Random;
-
 public class OverWeight extends VeryFast{
 
-    public VeryFast(String[] fields) {
+    public OverWeight(String[] fields) {
         super(fields);
     }
 
@@ -10,19 +8,12 @@ public class OverWeight extends VeryFast{
         return Integer.parseInt(fields[12]) > 150;
     }
 
-    public void attack(SuperHero oHero) {
+    public int attack(SuperHero oHero) {
         int damage = super.attack(oHero);
 
-        Random run = new Random();
-        int i = 0;
-        if (i == run.nextInt(5)){
-            damage = 0;
-        }
-        else {
-            return damage += this.getSpeed() - oHero.getSpeed();
+        damage += (this.getSpeed() - this.getSpeed() * 0.1) - oHero.getSpeed();
 
-        }
-
+        return damage;
 
     }
 

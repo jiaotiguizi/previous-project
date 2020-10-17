@@ -123,7 +123,7 @@ public class SuperHero {
         return occupation;
     }
 
-    public void attack(SuperHero oHero){
+    public int attack(SuperHero oHero){
         return this.combat;
     }
 
