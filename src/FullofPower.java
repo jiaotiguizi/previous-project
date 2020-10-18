@@ -17,3 +17,4 @@ public class FullofPower extends SuperHero{
         return damage;
     }
 }
+

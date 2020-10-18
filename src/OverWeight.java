@@ -1,11 +1,11 @@
-public class OverWeight extends VeryFast{
+public class OverWeight extends VeryFast {
 
     public OverWeight(String[] fields) {
         super(fields);
     }
 
-    public static boolean meetsConditions(String[] fields){
-        return Integer.parseInt(fields[12]) > 150;
+    public static boolean meetsConditions(String[] fields) {
+        return "Blue".equals(fields[13]);
     }
 
     public int attack(SuperHero oHero) {
@@ -17,7 +17,7 @@ public class OverWeight extends VeryFast{
 
     }
 
-    public static boolean SubCondition(String[] fields){
+    public static boolean SubCondition(String[] fields) {
         return true;
     }
 }

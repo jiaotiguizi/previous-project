@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class SuperHero {
+public class SuperHero extends BattleRoyale {
     private String name;
     private int intelligence;
     private int strength;
@@ -40,7 +40,7 @@ public class SuperHero {
         this.occupation = occupation;
     }
 
-    public SuperHero(String[] fields){
+    public SuperHero(String[] fields) {
         this.name = fields[0];
         this.intelligence = Integer.parseInt(fields[1]);
         this.strength = Integer.parseInt(fields[2]);
@@ -123,11 +123,11 @@ public class SuperHero {
         return occupation;
     }
 
-    public int attack(SuperHero oHero){
+    public int attack(SuperHero oHero) {
         return this.combat;
     }
 
-    public static boolean meetsConditions(String[] fields){
+    public static boolean meetsConditions(String[] fields) {
         return true;
     }
 
@@ -137,30 +137,27 @@ public class SuperHero {
         Scanner fileReader = new Scanner(file);
         fileReader.nextLine(); //skip headers
         int fieldCount = 16;
-        while(fileReader.hasNextLine()){
+        while (fileReader.hasNextLine()) {
             String[] fields = fileReader.nextLine().split(",");
 
-            if(fields.length != fieldCount){ //parsing error or problem with file
+            if (fields.length != fieldCount) { //parsing error or problem with file
                 System.out.println("expected 16 fields but counted " + fields.length);
-                for(String str : fields)
+                for (String str : fields)
                     System.out.println(str);
                 throw new IOException();
             }
 
             SuperHero hero;
 
-            if(MasterMind.meetsConditions(fields))
-                hero = new MasterMind(fields);
-            else if(StrengthBuilder.meetsConditions(fields))
-                hero = new StrengthBuilder(fields);
-            else if(FullofPower.meetsConditions(fields))
-                hero = new FullofPower(fields);
-            else if(DurableMan.meetsConditions(fields))
-                hero = new DurableMan(fields);
-            else if(VeryFast.meetsConditions(fields))
-                hero = new VeryFast(fields);
-            else
-                hero = new SuperHero(fields);
+            if (MasterMind.meetsConditions(fields)) hero = new MasterMind(fields);
+            else if (DontLookDownMe.meetsConditions(fields)) hero = new DontLookDownMe(fields);
+            else if (StrengthBuilder.meetsConditions(fields)) hero = new StrengthBuilder(fields);
+            else if (FullofPower.meetsConditions(fields)) hero = new FullofPower(fields);
+            else if (DurableMan.meetsConditions(fields)) hero = new DurableMan(fields);
+            else if (OverWeight.meetsConditions(fields)) hero = new OverWeight(fields);
+            else if (VeryFast.meetsConditions(fields)) hero = new VeryFast(fields);
+            else if (GreenLantern.meetsConditions(fields)) hero = new GreenLantern(fields);
+            else hero = new SuperHero(fields);
 
             heroes.add(hero);
 

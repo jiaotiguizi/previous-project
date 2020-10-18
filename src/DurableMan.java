@@ -16,3 +16,4 @@ public class DurableMan extends SuperHero{
         return damage;
     }
 }
+

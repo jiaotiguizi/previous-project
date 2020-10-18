@@ -58,6 +58,7 @@ My champion is: Green Lantern
 Their unique power is: Power of imagination. Green Lantern's power come from their green lantern. They can develop any super power, such as time travel, instant movement and form any weapon if they want. The basement of this power come from their imagination. The higher intelligence, the more imagination to use their green latern. It going to be a huge challenge to speed of their enemies. If their enemies' speed is not fast enough, they will get more damage from Green Lantern's attacking. However, the power of imagination have the highest damage which can destory other heroes immediately, nobody can escape or defense Green Lantern's attacking, 
 
 
+
 ## Step 2 - Develop SubClasses for your Categories
 In your src folder, we have provided you with a superclass called `SuperHero` and an example subclass called `MasterMind`. You may alter SuperHero, but you may not alter MasterMind. A third class, `BattleRoyale` contains the main method. 
 

@@ -16,6 +16,4 @@ public class StrengthBuilder extends SuperHero{
 
         return damage;
     }
-
-
 }
