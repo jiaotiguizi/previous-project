@@ -150,14 +150,14 @@ public class SuperHero extends BattleRoyale {
             SuperHero hero;
 
             if (MasterMind.meetsConditions(fields)) hero = new MasterMind(fields);
+            else if (HaroldJordan.meetsConditions(fields)) hero = new HaroldJordan(fields);
             else if (DontLookDownMe.meetsConditions(fields)) hero = new DontLookDownMe(fields);
-            else if (StrengthBuilder.meetsConditions(fields)) hero = new StrengthBuilder(fields);
+            else if (StrengthBuilder.meetsConditions(fields)) hero = new StrengthBuilder(fields);//StrengthBuilder是DontLookDownMe父类，构建时StrengthBuilder必须在DontLookDownMe后面
             else if (FullofPower.meetsConditions(fields)) hero = new FullofPower(fields);
             else if (DurableMan.meetsConditions(fields)) hero = new DurableMan(fields);
-            else if (OverWeight.meetsConditions(fields)) hero = new OverWeight(fields);
+            else if (BlueEyes.meetsConditions(fields)) hero = new BlueEyes(fields);
             else if (VeryFast.meetsConditions(fields)) hero = new VeryFast(fields);
-            else if (GreenLantern.meetsConditions(fields)) hero = new GreenLantern(fields);
-            else hero = new SuperHero(fields);
+            else hero = new SuperHero(fields);//如上同理，SuperHero必须写在所有子类后面
 
             heroes.add(hero);
 

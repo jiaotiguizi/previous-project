@@ -13,7 +13,7 @@ In this project, you will develop a Java program that demonstrates you can:
 You may partner with another student on this project to discuss code and strategies for completing the various parts of the assignment. You may share code with your partner, but you should still write much of your own code in your own repository. You should still update your repository (by pushing) incrementally as you make progress. It is up to teammates to ensure that their partner adheres to the <a href="https://www.american.edu/academics/integrity/code.cfm">American University Honor Code.</a> You may use [pair programming](https://en.wikipedia.org/wiki/Pair_programming), however, you must each take turns in the driver role on your own laptop. I should see commits and a submission on Github for each of you to get full credit for this assignment. If you decide to work with a partner, modify the statement below:
 
 - [] I worked on my own.
-- [x] I worked with Yewei Huang on this project. The parts I worked on were: Step 1 (part), 2, 3, 4 (part), 5, 6
+- [x] I worked with Yewei Huang on this project. The parts I worked on were: Step 1 (part), 2, 3, 4 (part), 5, and 6 (part)
 
 ## Step 1 - Open the Included Dataset in a Spreadsheet Application
 In the included file, `SuperHeroes.csv`, is a collection of super-powered or notable fictional individuals: heroes, villains, cosmic entities, starship captains, and many more. This is a comma-separated value (csv) file, and each line is a record. The properties of each record are separated by a comma. This is a simple text file format that is supported by many programming languages and packages. 

@@ -1,11 +1,12 @@
-public class GreenLantern extends SuperHero {
+public class HaroldJordan extends SuperHero {
 
-    public GreenLantern(String[] fields) {
+    public HaroldJordan(String[] fields) {
         super(fields);
     }
 
     public static boolean meetsConditions(String[] fields) {
-        return "Black".equals(fields[14]);
+        boolean is = "Harold Jordan".equals(fields[7]);
+        return is;
     }
 
     public int attack(SuperHero oHero) {

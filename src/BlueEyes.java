@@ -1,6 +1,6 @@
-public class OverWeight extends VeryFast {
+public class BlueEyes extends VeryFast {
 
-    public OverWeight(String[] fields) {
+    public BlueEyes(String[] fields) {
         super(fields);
     }
 
