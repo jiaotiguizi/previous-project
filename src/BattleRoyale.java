@@ -89,7 +89,6 @@ public class BattleRoyale {
                         myList_win.add(heroes.get(a).getAlignment());
                         if (heroes.get(a) instanceof MasterMind) masterMinds.add((MasterMind) heroes.get(a));
                         else if (heroes.get(a) instanceof DontLookDownMe) dontLookDownMes.add((DontLookDownMe) heroes.get(a));
-                            //StrengthBuilder是DontLookDownMe父类，判断时StrengthBuilder必须在DontLookDownMe后面
                         else if (heroes.get(a) instanceof StrengthBuilder) strengthBuilders.add((StrengthBuilder) heroes.get(a));
                         else if (heroes.get(a) instanceof FullofPower) fullofPowers.add((FullofPower) heroes.get(a));
                         else if (heroes.get(a) instanceof DurableMan) durableMans.add((DurableMan) heroes.get(a));
@@ -105,7 +104,6 @@ public class BattleRoyale {
                         myList_lose.add(heroes.get(b).getAlignment());
                         if (heroes.get(a) instanceof MasterMind) masterMinds_lose.add((MasterMind) heroes.get(a));
                         else if (heroes.get(a) instanceof DontLookDownMe) dontLookDownMes_lose.add((DontLookDownMe) heroes.get(a));
-                            //StrengthBuilder是DontLookDownMe父类，判断时StrengthBuilder必须在DontLookDownMe后面
                         else if (heroes.get(a) instanceof StrengthBuilder) strengthBuilders_lose.add((StrengthBuilder) heroes.get(a));
                         else if (heroes.get(a) instanceof FullofPower) fullofPowers_lose.add((FullofPower) heroes.get(a));
                         else if (heroes.get(a) instanceof DurableMan) durableMans_lose.add((DurableMan) heroes.get(a));
@@ -174,7 +172,7 @@ public class BattleRoyale {
             writer.println("VeryFast " + "win: " + veryFasts.size() + "lose: " + veryFasts_lose.size() + "tie: " + veryFasts_tie.size());
             writer.println("HaroldJordan " + "win: " + greenLanterns.size() + "lose: " + greenLanterns_lose.size() + "tie: " + greenLanterns_tie.size());
             writer.println("BlueEyes " + "win: " + blueEyes.size() + "lose: " + blueEyes_lose.size() + "tie: " + blueEyes_tie.size());
-
+            writer.println("Winner: MasterMind" + "win is " + masterMinds.size() + "  Loser: MasterMind " + "lose is " + masterMinds_lose.size() + "  Tier: MasterMind "+ "tie is " + masterMinds_tie.size());
 
             //List<String[]> everyones = new ArrayList<>();
             int[] count_Win = new int[665];
@@ -193,8 +191,8 @@ public class BattleRoyale {
                     String AlignmentB = heroes.get(b).getAlignment();
                     String nameB = heroes.get(b).getName();
                     if (damageA > damageB && !AlignmentA.equals(AlignmentB)) count_win += 1;
-                    else if (damageA < damageB && !AlignmentA.equals(AlignmentB)) count_lose += 1;
-                    else if (damageA == damageB && !AlignmentA.equals(AlignmentB)) count_tie += 1;
+                    if (damageA < damageB && !AlignmentA.equals(AlignmentB)) count_lose += 1;
+                    if (damageA == damageB && !AlignmentA.equals(AlignmentB)) count_tie += 1;
                 }
                 //everyones.add(new String[]{nameA, count_win + ""});
                 writer.println(nameA + " win: " + count_win + " lose: "  + count_lose + " tie: " + count_tie);
@@ -206,8 +204,8 @@ public class BattleRoyale {
             int loseIndex = getMaxValueIndex(count_Lose);
             int tieIndex = getMaxValueIndex(count_Tie);
             writer.println("Winner: " + heroes.get(winIndex).getName() + "，Victory：" + count_Win[winIndex]);
-            writer.println("Loser: " + heroes.get(loseIndex).getName() + "，Defeat：" + count_Win[loseIndex]);
-            writer.println("Tier: " + heroes.get(tieIndex).getName() + "，Tie：" + count_Win[tieIndex]);
+            writer.println("Loser: " + heroes.get(loseIndex).getName() + "，Defeat：" + count_Lose[loseIndex]);
+            writer.println("Tier: " + heroes.get(tieIndex).getName() + "，Tie：" + count_Tie[tieIndex]);
 
             writer.close();
         } catch (Exception e) {
